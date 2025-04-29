@@ -3,20 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Video Loop</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       overflow: hidden; /* Убираем прокрутку */
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #000;
     }
     video {
-      object-fit: cover; /* Это растянет видео по всему экрану */
+      object-fit: cover; /* Растягивает видео, чтобы оно заполнило весь экран */
       width: 100%;
       height: 100%;
     }
@@ -25,7 +22,7 @@
 <body>
   <video autoplay loop muted playsinline>
     <source src="https://res.cloudinary.com/donpcyhso/video/upload/v1745916248/Slice_1_mb87sd.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    Ваш браузер не поддерживает видео.
   </video>
 </body>
 </html>
